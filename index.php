@@ -8,14 +8,26 @@
       html{
         background-image: url(BenneBakgrund.png);
       }
+
       main{
         width: 80%;
         margin: 0px auto;
         font-family: 'Monoton', cursive;
       }
+
       fieldset{
         border: 0px;
       }
+
+      input[type="text"]{
+        border-style: dashed;
+      }
+
+      input[type="password"]{
+        border-style: dashed;
+      }
+
+
     </style>
   </head>
   <body>
@@ -26,11 +38,11 @@
           <legend>Logga in</legend>
           <p>
               <label for="username">Användarnamn:</label>
-              <input type="text" name="username" id="username">
+              <input type="text" name="username" id="username" autocomplete="off">
           </p>
           <p>
               <label for="password">Lösenord:</label>
-              <input type="password" name="password" id="password">
+              <input type="password" name="password" id="password" autocomplete="off">
           </p>
           <p>
           <input type="submit" name="submit" value="Logga in" id="submit">
